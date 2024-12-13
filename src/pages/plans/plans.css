@@ -1,0 +1,57 @@
+.plans__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1rem;
+}
+.plan .btn{
+    width: fit-content;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.plan_name{
+    margin-block: 1rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 100%;
+}
+.plan__description{
+    font-size: var(--font-xsm);
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+}
+.plan_price{
+    display: inline-flex;
+    align-items: center;
+    & p{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    &>p:first-child{
+        font-size: var(--font-lg);
+        color: var(--color-gray-100);
+        font-weight: 500;
+    }
+    &>p:last-child{
+        font-size: var(--font-md);
+        color: var(--color-gray-300);
+    }
+}
+
+.plan_features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    & .feature{
+        color: var(--color-gray-400);
+        &.feature_available{
+            color: var(--color-gray-100) !important;
+        }
+    }
+}

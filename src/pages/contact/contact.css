@@ -1,0 +1,37 @@
+.contact__container{
+    display: grid;
+    place-items: center;
+}
+.contact__wrapper{
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+
+    & a {
+        background: var(--color-primary);
+        font-size: var(--font-md);
+        border: 2px solid transparent;
+        padding: 0.5rem 0.7rem;
+        border-radius: var(--radius-2);
+        display: grid;
+        place-items: center;
+
+        &:hover{
+            background-color:transparent;
+            border-color: var(--color-gray-100);
+            color: var(--color-primary);
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contact__wrapper{
+        gap: 1.5rem;
+
+        & a{
+            padding: 0.7rem;
+            font-size: 1.5rem;
+            border-radius: 1rem;
+        }
+    }
+}

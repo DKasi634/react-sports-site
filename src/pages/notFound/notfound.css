@@ -1,0 +1,7 @@
+
+.notfound__container{
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    padding-block: 6rem 0;
+}

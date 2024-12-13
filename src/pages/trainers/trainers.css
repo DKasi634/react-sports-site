@@ -1,0 +1,39 @@
+
+.trainers__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 3rem 2rem;
+}
+
+.card.trainer{
+    padding: 1rem;
+    & img{
+        border-radius: 0 2rem;
+    }
+
+    & h3{
+        margin-top: 2rem;
+    }
+    & .trainer__socials{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        & a{
+            width: 2.5rem;
+            height: 2.5rem;
+            font-size: 0.9rem;
+            display: grid;
+            place-items: center;
+            border-radius: 0.5rem;
+            background: var(--color-gray-600);
+        }
+    }
+
+    &:hover a{
+        background: var(--color-gray-500)
+    }
+}
+

@@ -1,0 +1,122 @@
+nav{
+    height: 5rem;
+    width: 100vw;
+    background-color: var(--color-primary);
+    display: grid;
+    place-items: center;
+    position: fixed;
+    inset-inline: 0;
+    top: 0;
+    z-index: 100;
+}
+
+/* only show on medium and small screens  */
+.nav__toggle-btn{
+    display: none;
+    background: transparent;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.nav-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    width: 7rem !important;
+}
+
+.nav__links{
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+
+    & a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            color: var(--color-secondary);
+        }
+    }
+}
+
+.active-nav{
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        margin-inline: auto;
+        bottom: -2rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        transform: rotate(45deg);
+        background: var(--color-primary);
+    }
+}
+
+.main_outlet{
+    margin-top: 5rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .nav__toggle-btn{
+        display: inline-block;
+        & svg{
+            color: var(--color-gray-100);
+        }
+    }
+    .nav__links{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+    .active-nav, .active-nav::after{
+        display: none;
+    }
+    .nav__links li{
+        height: 4rem;
+        width: 100%;
+        box-shadow: -1rem 1rem 3rem rgba(0, 0, 0, 0.3);
+        animation: animateNav 600ms ease forwards;
+        opacity: 0;
+        transform: translateY(-2rem);
+        overflow: hidden;
+        &:nth-child(2){ animation-delay: 200ms;}
+        &:nth-child(3){ animation-delay: 400ms;}
+        &:nth-child(4){ animation-delay: 600ms;}
+        &:nth-child(5){ animation-delay: 800ms;}
+        &:nth-child(6){ animation-delay: 1s;}
+        &:last-child{ border-bottom-left-radius: var(--radius-1); border-bottom-right-radius: var(--radius-1); }
+        & a{
+            background-color: var(--color-primary);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: 1rem 3rem;
+        }
+    }
+
+    @keyframes animateNav {
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .nav_hidden{
+        display: none;
+    }
+    
+}

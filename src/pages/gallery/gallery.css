@@ -1,0 +1,16 @@
+
+.gallery__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+
+    & article{
+        padding: 1rem;
+        border-radius: var(--radius-1);
+        cursor: pointer;
+        &:hover{
+            background-color: var(--color-gray-500);
+        }
+    }
+}
+
