@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import Logo from "../images/logo.png"
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa"
 import { FaFacebookF, FaXTwitter } from "react-icons/fa6"
+import { IoLogoWhatsapp } from "react-icons/io"
 
 
 const Footer = () => {
@@ -17,9 +18,9 @@ const Footer = () => {
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, temporibus. Nam error dolor provident. Molestias at totam mollitia consequatur, saepe perferendis aliquam ipsum veniam laboriosam.
                 </p>
                 <div className="footer__socials">
-                    <a href="https://linkedin.com" target="_blank" rel="noreferrer noopener" ><FaLinkedinIn/></a>
-                    <a href="https://facebook.com" target="_blank" rel="noreferrer noopener" ><FaFacebookF/></a>
-                    <a href="https://x.com" target="_blank" rel="noreferrer noopener" ><FaXTwitter/></a>
+                    <a href="https://www.linkedin.com/in/daniel-kasi-32093b228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer noopener" ><FaLinkedinIn/></a>
+                    <a href="https://www.facebook.com/share/uMt6m9vx1Fgwzakt/" target="_blank" rel="noreferrer noopener" ><FaFacebookF/></a>
+                    <a href="https://wa.me/+243975623008" target="_blank" rel="noreferrer noopener" ><IoLogoWhatsapp/></a>
                     <a href="https://instagram.com" target="_blank" rel="noreferrer noopener" ><FaInstagram/></a>
                 </div>
             </article>
