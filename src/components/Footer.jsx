@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import Logo from "../images/logo.png"
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa"
-import { FaFacebookF, FaXTwitter } from "react-icons/fa6"
+import { FaFacebookF } from "react-icons/fa6"
 import { IoLogoWhatsapp } from "react-icons/io"
 
 
